@@ -1,0 +1,33 @@
+[INFO] Uniae - Execution Log
+Timestamp: 2025-12-29T14:20:12Z
+
+[INFO] Network: base-sepolia
+[INFO] Chain ID: 84532
+[INFO] RPC URL: https://sepolia.base.org
+[INFO] Explorer URL: https://sepolia.basescan.org
+
+[INFO] Connecting to RPC endpoint...
+[DEBUG] Attempting to connect to https://sepolia.base.org
+[INFO] RPC connection successful.
+
+[INFO] Fetching latest block number...
+[DEBUG] Block number response: 1234567
+[INFO] Latest block height fetched: 1234567
+
+[INFO] Querying account balance for exampleEOA...
+[DEBUG] Account address: cosmos1... (example address)
+[INFO] Balance response: 1000.00 ETH
+[INFO] Balance check passed for exampleEOA: 1000.00 ETH
+
+[INFO] Contract code check for exampleContract...
+[DEBUG] Contract address: cosmos1... (example contract address)
+[DEBUG] Contract code response: 0xabcdef1234567890abcdef...
+[INFO] Contract code verified successfully.
+
+[INFO] Verifying contract data in BaseScan Explorer...
+[DEBUG] Explorer URL: https://sepolia.basescan.org/address/cosmos1...
+[INFO] Explorer data verified successfully.
+
+[INFO] All validation steps completed successfully.
+[DEBUG] Logging execution details to logs/debug.log
+[INFO] Execution completed without errors.
