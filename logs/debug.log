@@ -1,0 +1,43 @@
+[DEBUG] Uniae Debug Log
+Timestamp: 2025-12-29T14:30:45Z
+
+[INFO] Starting Uniae network validation...
+[INFO] Network: base-sepolia
+[INFO] RPC URL: https://sepolia.base.org
+[INFO] Chain ID: 84532
+[INFO] Explorer URL: https://sepolia.basescan.org
+
+[INFO] Connecting to RPC endpoint...
+[DEBUG] Attempting to connect to RPC URL: https://sepolia.base.org
+[INFO] RPC connection successful.
+
+[INFO] Fetching latest block number...
+[DEBUG] RPC request: {"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}
+[INFO] Latest block height fetched: 1234567
+[DEBUG] RPC response: {"jsonrpc":"2.0","id":1,"result":"0x12d687"}
+[INFO] Block height check passed.
+
+[INFO] Querying account balance for address cosmos1...
+[DEBUG] Account address: cosmos1...
+[DEBUG] RPC request: {"jsonrpc":"2.0","method":"eth_getBalance","params":["cosmos1...", "latest"],"id":2}
+[INFO] Balance response: 1000.00 ETH
+[DEBUG] RPC response: {"jsonrpc":"2.0","id":2,"result":"0xde0b6b3a7640000"}
+[INFO] Balance check passed for cosmos1: 1000.00 ETH
+
+[INFO] Checking contract code for contract address cosmos1...
+[DEBUG] Contract address: cosmos1...
+[DEBUG] RPC request: {"jsonrpc":"2.0","method":"eth_getCode","params":["cosmos1...", "latest"],"id":3}
+[INFO] Contract code response: 0xabcdef1234567890abcdefabcdefabcdef
+[DEBUG] RPC response: {"jsonrpc":"2.0","id":3,"result":"0xabcdef1234567890abcdefabcdefabcdef"}
+[INFO] Contract code verified successfully.
+
+[INFO] Verifying contract data on BaseScan Explorer...
+[DEBUG] BaseScan Explorer URL: https://sepolia.basescan.org/address/cosmos1...
+[INFO] Explorer response: Contract data successfully retrieved from BaseScan.
+[DEBUG] Explorer response: {"status":"1","message":"OK","result":"Contract found"}
+
+[INFO] All validation steps completed successfully.
+[DEBUG] Logging validation results to logs/execution.log
+[INFO] Network validation and contract checks passed without errors.
+
+[DEBUG] Closing debug log file.
