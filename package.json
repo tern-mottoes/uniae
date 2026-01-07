@@ -1,0 +1,22 @@
+{
+  "__file": "package.json",
+  "name": "uniae",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "@coinbase/wallet-sdk": "latest",
+    "viem": "latest",
+    "axios": "latest",
+    "web3": "latest",
+    "ethers": "latest",
+    "coinbase-agentkit": "github:coinbase/agentkit",
+    "coinbase-wallet-sdk": "github:coinbase/wallet-sdk",
+    "base-docs": "github:base/docs",
+    "base-node": "github:base/node",
+    "base-web": "github:base/web",
+    "base-brand-kit": "github:base/brand-kit",
+    "coinbase-x402": "github:coinbase/x402"
+  }
+}
